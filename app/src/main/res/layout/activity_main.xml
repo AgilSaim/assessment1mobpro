@@ -18,7 +18,7 @@
                     android:padding="16dp">
 
                 <EditText
-                    android:id="@+id/harga"
+                    android:id="@+id/hargaEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="150dp"
@@ -28,7 +28,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/diskon"
+                    android:id="@+id/diskonEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -45,9 +45,32 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    app:layout_constraintStart_toStartOf="@+id/radioGroup"
-                    app:layout_constraintTop_toBottomOf="@+id/radioGroup"
                     />
+
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="?android:attr/listDivider"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/button"
+                            />
+
+                        <TextView
+                            android:id="@+id/totalTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/divider"
+                            tools:text="Total Harga :"
+                            />
 
                 </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
